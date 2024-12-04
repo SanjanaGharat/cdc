@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/global.css" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed w-full bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg shadow-md z-50 pt-4 pb-4">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <a href="#">
+                <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                     alt="Case Logo" 
+                     class="h-10">
+            </a>
+            <div class="lg:hidden">
+                <button id="menu-icon" class="text-3xl text-gray-800 focus:outline-none">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-6">
+                <!-- Dropdown Menu Items -->
+                <div class="relative dropdown">
+                    <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Leadership</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Consulting</a>
+                        <a href="#">Implementation</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="#">Projects</a>
+                        <a href="#">Clients</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">Process</a>
+                    <div class="dropdown-content">
+                        <a href="#">Planning</a>
+                        <a href="#">Execution</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">Inspiration</a>
+                    <div class="dropdown-content">
+                        <a href="#">Ideas</a>
+                        <a href="#">Trends</a>
+                    </div>
+                </div>
+                <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <div class="px-4 py-4 space-y-2 bg-white ">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="text-lg font-medium text-gray-700 hover:text-indigo-500">About</a>
+                        <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                            <i class="bx bx-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="mobile-about-dropdown" class="hidden">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Our Story</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50">Leadership</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.blog {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-2 px-8 mt-12;
+}
+
+.blog__text {
+    @apply mb-8;
+}
+
+.blog-post {
+    @apply mb-8 relative;
+}
+
+.blog-post__bg {
+    @apply bg-cover bg-center w-full sm:w-[500px] h-[250px] sm:h-[400px] relative;
+}
+
+.blog-post__overlay {
+    @apply absolute bottom-0 left-0 right-0 bg-white opacity-80 h-[50px] flex items-center justify-center px-4;
+}
+
+.blog-post__overlay h6 {
+    @apply text-red-700 text-sm font-semibold;
+}
+
+.blog__button {
+    @apply mt-6 text-center lg:text-left lg:ml-60;
+}
+
+.blog-button {
+    @apply bg-dark text-white py-2 px-6 inline-block rounded-md hover:bg-red-700;
+}
+
+/* Responsive Styles */
+@media (max-width: 770px) {
+    .blog-post__bg {
+        @apply w-full h-[250px];
+    }
+
+    .blog-button {
+        @apply py-2 px-4;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1064px) {
+    .blog {
+        @apply grid-cols-2 gap-5;
+    }
+
+    .blog-post__bg {
+        @apply h-[350px];
+    }
+}
+
+@media (min-width: 1064px) {
+    .blog {
+        @apply grid-cols-2 gap-8;
+    }
+
+    .blog-post__bg {
+        @apply h-[400px];
+    }
+}
