@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         Brandcolor: "#c11f1f",
         BrandcolorHover:"#991B1B",
+        Footercolor: "#edf2f7",
       },
     },
   },

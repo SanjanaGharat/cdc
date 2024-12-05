@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+/* footer */
+.footer-text{
+    @apply text-black hover:text-BrandcolorHover;
+}
 /* nav-bar */
 .dropdown-content a:hover {
     @apply bg-Brandcolor text-white;
@@ -125,7 +127,7 @@ hero-section */
     transform: rotate(60deg);
     z-index: 0; 
     pointer-events: none; 
-    transition: height 0.1s ease-out; 
+    transition: height 0.05s ease-out; 
 }
 
 

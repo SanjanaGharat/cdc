@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/css/home.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="headerl1">
+        <div class="headerl2">
+            <a href="#">
+                <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                     alt="Case Logo" 
+                     class="h-10">
+            </a>
+            <div class="lg:hidden">
+                <button id="menu-icon" class="large_menu_icon">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-6">
+                <!-- Dropdown Menu Items -->
+                <div class="relative dropdown">
+                    <a href="/about" class="headeritems">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Leadership</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="headeritems">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Consulting</a>
+                        <a href="#">Implementation</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="headeritems">Portfolio</a>
+                    <div class="dropdown-content">
+                        <a href="#">Projects</a>
+                        <a href="#">Clients</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="headeritems">Process</a>
+                    <div class="dropdown-content">
+                        <a href="#">Planning</a>
+                        <a href="#">Execution</a>
+                    </div>
+                </div>
+                <div class="relative dropdown">
+                    <a href="#" class="headeritems">Inspiration</a>
+                    <div class="dropdown-content">
+                        <a href="#">Ideas</a>
+                        <a href="#">Trends</a>
+                    </div>
+                </div>
+                <a href="/contact" class="headeritems">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden">
+            <div class="px-4 py-4 space-y-2 ">
+                <div>
+                    <div class="flex justify-between items-center">
+                        <a href="#" class="headeritems">About</a>
+                        <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                            <i class="bx bx-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div id="mobile-about-dropdown" class="hidden">
+                        <a href="#" class="mobile_header_subitems">Our Story</a>
+                        <a href="#" class="mobile_header_subitems">Leadership</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- About Section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
+    <div>
+        <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
+            <span>Contact Us</span>
+        </h1>
+    </div>
+    <div class="lg:mr-2">
+        <p class="hero-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<section class="px-8 md:px-16 lg:px-32 py-24">
+    <div class="max-w-4xl mx-auto">       
+        <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div class="flex flex-col">
+                    <label for="firstName" class="text-lg font-medium text-gray-700">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="lastName" class="text-lg font-medium text-gray-700 mt-4">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="email" class="text-lg font-medium text-gray-700 mt-4">Email</label>
+                    <input type="email" id="email" name="email" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="phone" class="text-lg font-medium text-gray-700 mt-4">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="addressLine1" class="text-lg font-medium text-gray-700 mt-4">Address Line 1</label>
+                    <input type="text" id="addressLine1" name="addressLine1" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="addressLine2" class="text-lg font-medium text-gray-700 mt-4">Address Line 2</label>
+                    <input type="text" id="addressLine2" name="addressLine2" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
+
+                    <label for="city" class="text-lg font-medium text-gray-700 mt-4">City</label>
+                    <input type="text" id="city" name="city" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="state" class="text-lg font-medium text-gray-700 mt-4">State</label>
+                    <input type="text" id="state" name="state" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="zip" class="text-lg font-medium text-gray-700 mt-4">Zip Code</label>
+                    <input type="text" id="zip" name="zip" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+                </div>
+                
+                <!-- Right Column (Project Type) -->
+                <div class="flex flex-col">
+                    <label for="projectType" class="text-lg font-medium text-gray-700">Project Type</label>
+                    <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- First Column of Checkboxes -->
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="addition" name="projectType" value="addition" class="mr-2">
+                                Addition
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="accessibility" name="projectType" value="accessibility" class="mr-2">
+                                Accessibility
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="basement" name="projectType" value="basement" class="mr-2">
+                                Basement
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="bath" name="projectType" value="bath" class="mr-2">
+                                Bath
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="exterior" name="projectType" value="exterior" class="mr-2">
+                                Exterior
+                            </label>
+                        </div>
+                        <!-- Second Column of Checkboxes -->
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="kitchen" name="projectType" value="kitchen" class="mr-2">
+                                Kitchen
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="homeRepair" name="projectType" value="homeRepair" class="mr-2">
+                                Home Repair
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="interior" name="projectType" value="interior" class="mr-2">
+                                Interior
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="other" name="projectType" value="other" class="mr-2">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <label for="goals" class="text-lg font-medium text-gray-700 mt-4">Renovation Goals</label>
+                    <textarea id="goals" name="goals" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" rows="4" required></textarea>
+
+                    <label for="date" class="text-lg font-medium text-gray-700 mt-4">I Would Like to Schedule</label>
+                    <input type="date" id="date" name="date" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="time" class="text-lg font-medium text-gray-700 mt-4">Time</label>
+                    <input type="time" id="time" name="time" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="howDidYouHear" class="text-lg font-medium text-gray-700 mt-4">How did you hear about us?</label>
+                    <input type="text" id="howDidYouHear" name="howDidYouHear" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
+
+                    <div class="flex items-center mt-4">
+                        <input type="checkbox" id="optOut" name="optOut" class="mr-2">
+                        <label for="optOut" class="text-sm text-gray-700">Opt out of receiving our eNewsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="mt-6 p-3 bg-Brandcolor text-white font-medium rounded-md hover:bg-BrandcolorHover focus:outline-none focus:ring-2 focus:ring-Brandcolor">Submit</button>
+                </div>
+            </div>
+
+            <p class="text-sm mt-6 text-center text-gray-600">
+                By submitting this form, I authorize Case Design/Remodeling, Inc. to contact me in the future with information about its products and services via email, phone, and/or text, and consent to the use of automated telephone technology at the contact information provided above. I understand that consent is not required to purchase goods or services from Case Design/Remodeling, Inc.
+            </p>
+        </form>
+    </div>
+</section>
+
+      </main>
+
+<!-- Footer Section starts -->
+<div class="flex flex-col bg-opacity-100 isolate">
+    <!-- Footer Section at the End of the Page -->
+    <footer class="bg-Footercolor text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Section with Logo -->
+          <div class="text-center sm:text-left">
+            <!-- Company Logo -->
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" alt="Company Logo" class="w-32 mx-auto sm:mx-0">
+            <p class="mt-2 text-sm text-black">Empowering your business with innovative solutions.</p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
+            <ul class="mt-2 space-y-2 ">
+              <li><a href="../index.html" class="footer-text">Home</a></li>
+              <li><a href="service.html" class="footer-text">Services</a></li>
+              <li><a href="servicearea.html" class="footer-text">Area Served</a></li>
+              <li><a href="about.html" class="footer-text">About Us</a></li>
+              <li><a href="blog.html" class="footer-text">Blog</a></li>
+              <li><a href="/contact" class="footer-text">Contact</a></li>
+              <li><a href="../sitemap.html" class="footer-text">Sitemap</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Contact Us</h4>
+            <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm text-black">City, State, ZIP</p>
+            <p class="mt-2 text-sm">
+              Email: <a href="mailto:contact@company.com" class="footer-text">contact@company.com</a>
+            </p>
+            <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left">
+            <h5 class="text-lg font-semibold text-Brandcolor">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="footer-text">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="footer-text">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-text">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="footer-text">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-gray-700 pt-4">
+            <div class="flex justify-center items-center space-x-2">
+              <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
+              <a href="privacy.html" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+              <a href="terms.html" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
+            </div>
+          </div>
+          
+      </div>
+    </footer>
+</div>
+  <!-- Footer Section ends -->
+  
+      
+      
+    <script src="/js/script.js"></script>
+</body>
+</html>

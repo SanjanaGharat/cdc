@@ -30,3 +30,6 @@ const menuIcon = document.getElementById('menu-icon');
             const newHeight = scrollY * 1.5; 
             line.style.height = `${newHeight}px`;
         });
+
+
+        

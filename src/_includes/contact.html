@@ -1,0 +1,110 @@
+<!-- Contact Form Section -->
+<section class="px-8 md:px-16 lg:px-32 py-24">
+    <div class="max-w-4xl mx-auto">       
+        <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div class="flex flex-col">
+                    <label for="firstName" class="text-lg font-medium text-gray-700">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="lastName" class="text-lg font-medium text-gray-700 mt-4">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="email" class="text-lg font-medium text-gray-700 mt-4">Email</label>
+                    <input type="email" id="email" name="email" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="phone" class="text-lg font-medium text-gray-700 mt-4">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="addressLine1" class="text-lg font-medium text-gray-700 mt-4">Address Line 1</label>
+                    <input type="text" id="addressLine1" name="addressLine1" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="addressLine2" class="text-lg font-medium text-gray-700 mt-4">Address Line 2</label>
+                    <input type="text" id="addressLine2" name="addressLine2" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
+
+                    <label for="city" class="text-lg font-medium text-gray-700 mt-4">City</label>
+                    <input type="text" id="city" name="city" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="state" class="text-lg font-medium text-gray-700 mt-4">State</label>
+                    <input type="text" id="state" name="state" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="zip" class="text-lg font-medium text-gray-700 mt-4">Zip Code</label>
+                    <input type="text" id="zip" name="zip" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+                </div>
+                
+                <!-- Right Column (Project Type) -->
+                <div class="flex flex-col">
+                    <label for="projectType" class="text-lg font-medium text-gray-700">Project Type</label>
+                    <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- First Column of Checkboxes -->
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="addition" name="projectType" value="addition" class="mr-2">
+                                Addition
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="accessibility" name="projectType" value="accessibility" class="mr-2">
+                                Accessibility
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="basement" name="projectType" value="basement" class="mr-2">
+                                Basement
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="bath" name="projectType" value="bath" class="mr-2">
+                                Bath
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="exterior" name="projectType" value="exterior" class="mr-2">
+                                Exterior
+                            </label>
+                        </div>
+                        <!-- Second Column of Checkboxes -->
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="kitchen" name="projectType" value="kitchen" class="mr-2">
+                                Kitchen
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="homeRepair" name="projectType" value="homeRepair" class="mr-2">
+                                Home Repair
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="interior" name="projectType" value="interior" class="mr-2">
+                                Interior
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" id="other" name="projectType" value="other" class="mr-2">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <label for="goals" class="text-lg font-medium text-gray-700 mt-4">Renovation Goals</label>
+                    <textarea id="goals" name="goals" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" rows="4" required></textarea>
+
+                    <label for="date" class="text-lg font-medium text-gray-700 mt-4">I Would Like to Schedule</label>
+                    <input type="date" id="date" name="date" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="time" class="text-lg font-medium text-gray-700 mt-4">Time</label>
+                    <input type="time" id="time" name="time" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
+
+                    <label for="howDidYouHear" class="text-lg font-medium text-gray-700 mt-4">How did you hear about us?</label>
+                    <input type="text" id="howDidYouHear" name="howDidYouHear" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
+
+                    <div class="flex items-center mt-4">
+                        <input type="checkbox" id="optOut" name="optOut" class="mr-2">
+                        <label for="optOut" class="text-sm text-gray-700">Opt out of receiving our eNewsletter</label>
+                    </div>
+                    
+                    <button type="submit" class="mt-6 p-3 bg-Brandcolor text-white font-medium rounded-md hover:bg-BrandcolorHover focus:outline-none focus:ring-2 focus:ring-Brandcolor">Submit</button>
+                </div>
+            </div>
+
+            <p class="text-sm mt-6 text-center text-gray-600">
+                By submitting this form, I authorize Case Design/Remodeling, Inc. to contact me in the future with information about its products and services via email, phone, and/or text, and consent to the use of automated telephone technology at the contact information provided above. I understand that consent is not required to purchase goods or services from Case Design/Remodeling, Inc.
+            </p>
+        </form>
+    </div>
+</section>

@@ -1,12 +1,12 @@
-module.exports = function (eleventyConfig) {
+
+export default function (eleventyConfig) {
     // Copy static files
     eleventyConfig.addPassthroughCopy("src/css/");
     eleventyConfig.addPassthroughCopy("src/js");
 
     eleventyConfig.addWatchTarget("src/css/");
     eleventyConfig.addWatchTarget("src/js");
-    
-  
+
     // Return configuration object
     return {
       dir: {
@@ -20,5 +20,4 @@ module.exports = function (eleventyConfig) {
       htmlTemplateEngine: 'njk',
       dataTemplateEngine: 'njk',
     };
-  };
-  
+}
