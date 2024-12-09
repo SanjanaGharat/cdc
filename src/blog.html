@@ -1,0 +1,101 @@
+---
+layout: layouts/base.html
+title: Our Blogs
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam."
+---
+{% include "hero2.html" %}
+<section class="py-16 bg-opacity-100 isolate bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-container"></div>
+  
+      <!-- Load More Button -->
+      <div class="mt-8 text-center">
+        <button id="load-more-btn" class="px-6 py-2 text-white bg-Brandcolor rounded-full hover:bg-BrandcolorHover focus:outline-none">Load More</button>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+  
+    const blogData = [
+      {
+        title: 'Blog Title 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        image: 'https://media.istockphoto.com/id/1312425667/photo/woman-using-social-media-microblogging-app-on-her-phone.jpg?s=612x612&w=0&k=20&c=jOOYTTaH7NV30sNTZiu6A_VH_H8orJoEkjYU6oI0vxA=',
+        link: '/blog/post-1'
+      },
+      {
+        title: 'Blog Title 2',
+        description: 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio...',
+        image: 'https://media.istockphoto.com/id/489556478/photo/travelling-tools.jpg?s=612x612&w=0&k=20&c=QtLGCZnOrH5vy8Q39Hi9d6TV3_IMxb3kjgdNDh8QZJk=',
+        link: '/blog/post-2'
+      },
+      {
+        title: 'Blog Title 3',
+        description: 'Aenean ligula nibh, in tempus nisl hendrerit non...',
+        image: 'https://media.istockphoto.com/id/1156710615/photo/woman-using-laptop-on-a-bench.webp?a=1&b=1&s=612x612&w=0&k=20&c=c2RSrzXP_-tz54GukgtQ-9YNRMRRSnpeqmTGEK4vfFI=',
+        link: '/blog/post-3'
+      },
+      {
+        title: 'Blog Title 4',
+        description: 'Vivamus finibus sem sit amet ligula...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-4'
+      },
+      {
+        title: 'Blog Title 5',
+        description: 'Fusce eget ipsum interdum, dapibus erat vitae...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-5'
+      },
+      {
+        title: 'Blog Title 6',
+        description: 'Maecenas eleifend felis a orci ultricies, at rutrum risus eleifend...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-6'
+      },
+      // Add more blog objects here
+    ];
+  
+    let currentBlogIndex = 0;
+  
+    // Function to render blogs
+    function renderBlogs() {
+      const blogContainer = document.getElementById('blog-container');
+      
+      // Render next 3 blogs
+      const blogsToRender = blogData.slice(currentBlogIndex, currentBlogIndex + 3);
+      blogsToRender.forEach(blog => {
+        const blogCard = document.createElement('div');
+        blogCard.classList.add('relative', 'group', 'overflow-hidden'); 
+        blogCard.innerHTML = `
+          <a href="${blog.link}" class="block">
+            <div class="relative">
+              <img src="${blog.image}" alt="${blog.title}" class="w-full h-auto object-cover transition-transform transform group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-75 p-4 ">
+                <h3 class="text-lg font-semibold text-Brandcolor hover:underline">${blog.title}</h3>
+                <p class="text-sm text-Brandcolor">${blog.description}</p>
+              </div>
+            </div>
+          </a>
+        `;
+        blogContainer.appendChild(blogCard);
+      });
+  
+      // Update current blog index
+      currentBlogIndex += 3;
+      
+      // Disable the load more button if all blogs are loaded
+      if (currentBlogIndex >= blogData.length) {
+        document.getElementById('load-more-btn').disabled = true;
+        document.getElementById('load-more-btn').innerText = 'No More Blogs';
+      }
+    }
+  
+    // Load initial blogs
+    renderBlogs();
+  
+    // Load more blogs when button is clicked
+    document.getElementById('load-more-btn').addEventListener('click', renderBlogs);
+  </script>
+  

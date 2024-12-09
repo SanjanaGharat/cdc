@@ -89,7 +89,7 @@
 <div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
     <div>
         <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
-            <span>Contact Us</span>
+            <span>Our Blogs</span>
         </h1>
     </div>
     <div class="lg:mr-2">
@@ -97,117 +97,101 @@
     </div>
 </div>
 
-<!-- Contact Form Section -->
-<section class="px-8 md:px-16 lg:px-32 py-24">
-    <div class="max-w-4xl mx-auto">       
-        <form class="space-y-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Left Column -->
-                <div class="flex flex-col">
-                    <label for="firstName" class="text-lg font-medium text-gray-700">First Name</label>
-                    <input type="text" id="firstName" name="firstName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="lastName" class="text-lg font-medium text-gray-700 mt-4">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="email" class="text-lg font-medium text-gray-700 mt-4">Email</label>
-                    <input type="email" id="email" name="email" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="phone" class="text-lg font-medium text-gray-700 mt-4">Phone</label>
-                    <input type="tel" id="phone" name="phone" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="addressLine1" class="text-lg font-medium text-gray-700 mt-4">Address Line 1</label>
-                    <input type="text" id="addressLine1" name="addressLine1" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="addressLine2" class="text-lg font-medium text-gray-700 mt-4">Address Line 2</label>
-                    <input type="text" id="addressLine2" name="addressLine2" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
-
-                    <label for="city" class="text-lg font-medium text-gray-700 mt-4">City</label>
-                    <input type="text" id="city" name="city" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="state" class="text-lg font-medium text-gray-700 mt-4">State</label>
-                    <input type="text" id="state" name="state" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="zip" class="text-lg font-medium text-gray-700 mt-4">Zip Code</label>
-                    <input type="text" id="zip" name="zip" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-                </div>
-                
-                <!-- Right Column (Project Type) -->
-                <div class="flex flex-col">
-                    <label for="projectType" class="text-lg font-medium text-gray-700">Project Type</label>
-                    <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- First Column of Checkboxes -->
-                        <div>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="addition" name="projectType" value="addition" class="mr-2">
-                                Addition
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="accessibility" name="projectType" value="accessibility" class="mr-2">
-                                Accessibility
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="basement" name="projectType" value="basement" class="mr-2">
-                                Basement
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="bath" name="projectType" value="bath" class="mr-2">
-                                Bath
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="exterior" name="projectType" value="exterior" class="mr-2">
-                                Exterior
-                            </label>
-                        </div>
-                        <!-- Second Column of Checkboxes -->
-                        <div>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="kitchen" name="projectType" value="kitchen" class="mr-2">
-                                Kitchen
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="homeRepair" name="projectType" value="homeRepair" class="mr-2">
-                                Home Repair
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="interior" name="projectType" value="interior" class="mr-2">
-                                Interior
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="other" name="projectType" value="other" class="mr-2">
-                                Other
-                            </label>
-                        </div>
-                    </div>
-
-                    <label for="goals" class="text-lg font-medium text-gray-700 mt-4">Renovation Goals</label>
-                    <textarea id="goals" name="goals" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" rows="4" required></textarea>
-
-                    <label for="date" class="text-lg font-medium text-gray-700 mt-4">I Would Like to Schedule</label>
-                    <input type="date" id="date" name="date" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="time" class="text-lg font-medium text-gray-700 mt-4">Time</label>
-                    <input type="time" id="time" name="time" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor" required>
-
-                    <label for="howDidYouHear" class="text-lg font-medium text-gray-700 mt-4">How did you hear about us?</label>
-                    <input type="text" id="howDidYouHear" name="howDidYouHear" class="mt-2 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-Brandcolor">
-
-                    <div class="flex items-center mt-4">
-                        <input type="checkbox" id="optOut" name="optOut" class="mr-2">
-                        <label for="optOut" class="text-sm text-gray-700">Opt out of receiving our eNewsletter</label>
-                    </div>
-                    
-                    <button type="submit" class="mt-6 p-3 bg-Brandcolor text-white font-medium rounded-md hover:bg-BrandcolorHover focus:outline-none focus:ring-2 focus:ring-Brandcolor">Submit</button>
-                </div>
-            </div>
-
-            <p class="text-sm mt-6 text-center text-gray-600">
-                By submitting this form, I authorize Case Design/Remodeling, Inc. to contact me in the future with information about its products and services via email, phone, and/or text, and consent to the use of automated telephone technology at the contact information provided above. I understand that consent is not required to purchase goods or services from Case Design/Remodeling, Inc.
-            </p>
-        </form>
+<section class="py-16 bg-opacity-100 isolate bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-container"></div>
+  
+      <!-- Load More Button -->
+      <div class="mt-8 text-center">
+        <button id="load-more-btn" class="px-6 py-2 text-white bg-Brandcolor rounded-full hover:bg-BrandcolorHover focus:outline-none">Load More</button>
+      </div>
     </div>
-</section>
-
+  </section>
+  
+  <script>
+  
+    const blogData = [
+      {
+        title: 'Blog Title 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        image: 'https://media.istockphoto.com/id/1312425667/photo/woman-using-social-media-microblogging-app-on-her-phone.jpg?s=612x612&w=0&k=20&c=jOOYTTaH7NV30sNTZiu6A_VH_H8orJoEkjYU6oI0vxA=',
+        link: '/blog/post-1'
+      },
+      {
+        title: 'Blog Title 2',
+        description: 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio...',
+        image: 'https://media.istockphoto.com/id/489556478/photo/travelling-tools.jpg?s=612x612&w=0&k=20&c=QtLGCZnOrH5vy8Q39Hi9d6TV3_IMxb3kjgdNDh8QZJk=',
+        link: '/blog/post-2'
+      },
+      {
+        title: 'Blog Title 3',
+        description: 'Aenean ligula nibh, in tempus nisl hendrerit non...',
+        image: 'https://media.istockphoto.com/id/1156710615/photo/woman-using-laptop-on-a-bench.webp?a=1&b=1&s=612x612&w=0&k=20&c=c2RSrzXP_-tz54GukgtQ-9YNRMRRSnpeqmTGEK4vfFI=',
+        link: '/blog/post-3'
+      },
+      {
+        title: 'Blog Title 4',
+        description: 'Vivamus finibus sem sit amet ligula...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-4'
+      },
+      {
+        title: 'Blog Title 5',
+        description: 'Fusce eget ipsum interdum, dapibus erat vitae...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-5'
+      },
+      {
+        title: 'Blog Title 6',
+        description: 'Maecenas eleifend felis a orci ultricies, at rutrum risus eleifend...',
+        image: 'https://via.placeholder.com/400x250',
+        link: '/blog/post-6'
+      },
+      // Add more blog objects here
+    ];
+  
+    let currentBlogIndex = 0;
+  
+    // Function to render blogs
+    function renderBlogs() {
+      const blogContainer = document.getElementById('blog-container');
+      
+      // Render next 3 blogs
+      const blogsToRender = blogData.slice(currentBlogIndex, currentBlogIndex + 3);
+      blogsToRender.forEach(blog => {
+        const blogCard = document.createElement('div');
+        blogCard.classList.add('relative', 'group', 'overflow-hidden'); 
+        blogCard.innerHTML = `
+          <a href="${blog.link}" class="block">
+            <div class="relative">
+              <img src="${blog.image}" alt="${blog.title}" class="w-full h-auto object-cover transition-transform transform group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-75 p-4 ">
+                <h3 class="text-lg font-semibold text-Brandcolor hover:underline">${blog.title}</h3>
+                <p class="text-sm text-Brandcolor">${blog.description}</p>
+              </div>
+            </div>
+          </a>
+        `;
+        blogContainer.appendChild(blogCard);
+      });
+  
+      // Update current blog index
+      currentBlogIndex += 3;
+      
+      // Disable the load more button if all blogs are loaded
+      if (currentBlogIndex >= blogData.length) {
+        document.getElementById('load-more-btn').disabled = true;
+        document.getElementById('load-more-btn').innerText = 'No More Blogs';
+      }
+    }
+  
+    // Load initial blogs
+    renderBlogs();
+  
+    // Load more blogs when button is clicked
+    document.getElementById('load-more-btn').addEventListener('click', renderBlogs);
+  </script>
+  
       </main>
 
 <!-- Footer Section starts -->

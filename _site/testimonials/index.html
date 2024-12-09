@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "basehead.html" %}
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/css/home.css" rel="stylesheet">
 
 </head>
 <body>
@@ -77,7 +85,29 @@
         </div>
     </header>
     <main>
-        {{ content | safe }}
+        
+<!-- About Section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
+    <div>
+        <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
+            <span>Testimonials</span>
+        </h1>
+    </div>
+    <div class="lg:mr-2">
+        <p class="hero-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+    </div>
+</div>
+
+<section class="testimonial py-8 rounded-lg mb-8">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <blockquote class="text-lg italic text-gray-700 text-justify mb-6">
+        "I would highly recommend Case Design/Remodeling for any project. They created a beautiful design for our kitchen and great room area, working around some unusual existing architecture. The design and budgeting process was straightforward and collaborative, including the material selection process. Case recommended excellent vendors for the appliances, plumbing, and lighting, and coordinated deliveries with those vendors. The build progressed on schedule with friendly and talented carpenters and tradespeople. The team minimized the disruption to the rest of our home and left the work site clean and neat every evening. Our lead carpenter, Drew Davis, was super-friendly, very creative, and highly skilled. He came up with creative “fixes” and workarounds and included us in detailed design decisions while doing the finish carpentry and cabinet setup. This was the largest remodel project we had ever undertaken and Case was a reliable and skilled partner throughout. We are thrilled with the results – the kitchen and great room are beautiful and really work for our lifestyle."
+      </blockquote>
+      <footer class="text-right font-semibold text-gray-900">- Sharon A.</footer>
+      <a href="#" class="inline-block mt-4 px-4 py-2 text-Brandcolor hover:underline hover:text-BrandcolorHover text-center rounded-lg transition-colors ">VIEW THIS PROJECT</a>
+    </div>
+  </section>
+  
       </main>
 
 <!-- Footer Section starts -->
