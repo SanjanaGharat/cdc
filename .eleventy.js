@@ -6,9 +6,10 @@ export default function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget("src/css/");
     eleventyConfig.addWatchTarget("src/js");
-    eleventyConfig.addCollection("testimonials", function(collectionApi) {
-      return collectionApi.getAll().filter(item => item.inputPath.includes("testimonials.md"));
+    eleventyConfig.addCollection("testimonials", (collection) => {
+      return collection.getFilteredByGlob("./src/testimonials/*.md");
     });
+  
     // Return configuration object
     return {
       dir: {

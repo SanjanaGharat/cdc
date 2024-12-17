@@ -5,5 +5,22 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iac
 ---
 
 {% include "hero2.html" %}
-{% include "testimonials.html" %}
-  
+
+<main>
+   
+    {% for testimonial in collections.testimonials %}
+      <section class="testimonial py-8 rounded-lg mb-8">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <blockquote class="text-lg italic text-gray-700 text-justify mb-6">
+            {{ testimonial.data.quote }}
+          </blockquote>
+          <footer class="text-right font-semibold text-gray-900">
+            - {{ testimonial.data.author }}
+          </footer>
+          <a href="{{ testimonial.data.link }}" class="inline-block mt-4 px-4 py-2 text-Brandcolor hover:underline hover:text-BrandcolorHover text-center rounded-lg transition-colors">
+            {{ testimonial.data.buttonText }}
+          </a>
+        </div>
+      </section>
+    {% endfor %}
+  </main>
