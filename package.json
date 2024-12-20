@@ -4,6 +4,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
+        "dev": "next dev",
         "build:css": "npx tailwindcss -i ./src/css/global.css -o ./src/css/tailwind.css --watch",
         "build": "npm run build:css && npx eleventy",
         "start": "npm run build:css && npx eleventy --serve"
