@@ -1,0 +1,81 @@
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+
+    <!-- Main Content Section -->
+    <section class="container mx-auto px-4 py-12">
+        <!-- Title and Description -->
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl text-Brandcolor mb-4 tracking-wide">{{Area_Page_Title}}</h2>
+        </div>
+        <section class="container mx-auto px-4">
+            <!-- Image with Lorem Ipsum Text Below it -->
+            <div class="flex flex-col items-center justify-center bg-white p-8 mb-12" data-aos="fade-up">
+                <img src="{{ImageURL}}" alt="Service Image" class="w-full max-w-3xl mb-6 rounded-lg shadow-xl">
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">{{Description1}}</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">{{Description2}}</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">{{Description3}}</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">{{Description4}}</p>
+            </div>
+        </section>
+        <section class="mt-10 px-5">
+            <div class="relative w-full h-96 mt-5 mb-10">
+                <!-- Google Map iframe -->
+                <iframe src="{{MapURL}}" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            {% for service in services %}
+            <div class="bg-white p-6 rounded-xl shadow-xl hover-grow hover-shadow" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 200 }}">
+                <h3 class="text-2xl font-semibold text-Brandcolor mb-4">{{ service.title }}</h3>
+                <img src="{{ service.imgURL }}" alt="{{ service.title }}" class="w-full h-48 object-cover rounded-lg mb-4 transition duration-300 hover:scale-110">
+                <p class="text-gray-600 text-lg">{{ service.description }}</p>
+                <a href="{{ service.link }}" class="mt-4 inline-block bg-Brandcolor text-white font-semibold py-2 px-6 rounded-full hover:bg-BrandcolorHover transition duration-300">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+        
+
+        <!-- Request a Quote Section -->
+        <div class="text-center mt-16" data-aos="fade-up">
+            <h2 class="text-4xl font-extrabold text-Brandcolor mb-4">{{QuoteTitle}}</h2>
+            <p class="text-xl text-gray-700 mb-6 max-w-3xl mx-auto">{{QuoteDescription}}</p>
+            <a href="{{QuoteLink}}">
+                <button class="px-8 py-3 bg-Brandcolor text-white font-semibold rounded-full text-lg hover:bg-BrandcolorHover transition duration-300">Request a Quote</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Location Links Section -->
+    <section class="bg-Brandcolor py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">{{LocationTitle}}</h2>
+            <div class="space-x-6">
+                <a href="{{Location1Link}}" class="text-white hover:text-BrandcolorHover text-lg font-medium">{{Location1}}</a>
+                <a href="{{Location2Link}}" class="text-white hover:text-BrandcolorHover text-lg font-medium">{{Location2}}</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({
+            duration: 1000,  
+            easing: 'ease-in-out',
+            once: true, 
+        });
+    </script>

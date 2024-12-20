@@ -1,8 +1,0 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.herol1{
-    @apply relative  flex sm:flex-row-reverse flex-col items-center justify-between w-full sm:h-[70vh] pt-24;
-}

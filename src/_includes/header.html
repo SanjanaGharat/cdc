@@ -1,0 +1,70 @@
+<header class="headerl1">
+    <div class="headerl2">
+        <a href="{{ header.home }}">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="{{ header.home }}" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="{{ header.about.url }}" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    {% for subLink in header.about.subLinks %}
+                        <a href="{{ subLink.url }}">{{ subLink.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="{{ header.services.url }}" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    {% for subLink in header.services.subLinks %}
+                        <a href="{{ subLink.url }}">{{ subLink.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="{{ header.areaServed }}" class="headeritems">Area Served</a>
+            <a href="{{ header.contact }}" class="headeritems">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="{{ header.home }}" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="{{ header.about.url }}" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    {% for subLink in header.about.subLinks %}
+                        <a href="{{ subLink.url }}" class="mobile_header_subitems">{{ subLink.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="{{ header.services.url }}" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    {% for subLink in header.services.subLinks %}
+                        <a href="{{ subLink.url }}" class="mobile_header_subitems">{{ subLink.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            <a href="{{ header.areaServed }}" class="headeritems">Area Served</a>
+            <a href="{{ header.contact }}" class="headeritems">Contact</a>
+        </div>
+    </div>
+</header>

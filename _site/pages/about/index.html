@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseDesgin</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="headerl1">
+    <div class="headerl2">
+        <a href="/index">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="/index" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="/pages/about" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/pages/testimonials">Testimonials</a>
+                    
+                        <a href="/pages/blog">Blog</a>
+                    
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="/pages/service" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/Services/kitchen">Kitchen</a>
+                    
+                        <a href="/Services/bath">Bath</a>
+                    
+                        <a href="/Services/Additions">Additions</a>
+                    
+                        <a href="/Services/indoorliving">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="/index" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/about" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    
+                        <a href="/pages/testimonials" class="mobile_header_subitems">Testimonials</a>
+                    
+                        <a href="/pages/blog" class="mobile_header_subitems">Blog</a>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/service" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    
+                        <a href="/Services/kitchen" class="mobile_header_subitems">Kitchen</a>
+                    
+                        <a href="/Services/bath" class="mobile_header_subitems">Bath</a>
+                    
+                        <a href="/Services/Additions" class="mobile_header_subitems">Additions</a>
+                    
+                        <a href="/Services/indoorliving" class="mobile_header_subitems">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <!-- About Section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
+    <div>
+        <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
+            <span>About</span>
+        </h1>
+    </div>
+    <div class="lg:mr-2">
+        <p class="hero-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+    </div>
+</div>
+
+<!-- Video Section -->
+<section class="flex items-center justify-center px-8 md:px-16 lg:px-32 py-12">
+    <div class="w-full max-w-4xl">
+        <div class="relative" style="padding-top: 56.25%; /* 16:9 Aspect Ratio */">
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg" 
+                src="https://www.youtube.com/embed/5hPtU8Jbpg0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <p class="mt-4 text-center text-gray-600 text-sm">
+            Watch this video to learn more about the topic. A brief description or context for the video can be added here.
+        </p>
+    </div>
+</section>
+
+<!-- Our Promise Section -->
+<section class="px-8 md:px-16 lg:px-32 py-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-Brandcolor text-3xl mb-6 text-left">Our Promise</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6 text-left text-justify">
+            We are here to turn inspired ideas into beautiful homes. We are here to guide you through the remodeling process personally and with great care.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed text-left text-justify">
+            We’ve spent over 60 years developing people and processes that seamlessly combine custom design solutions, professional project management, and expert craftsmanship.
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mt-6 text-left text-justify">
+            Because we’re here to make the one place in the world that’s yours. Your home.
+        </p>
+    </div>
+</section>
+
+<!-- Who We Are Section -->
+<section class="px-8 md:px-16 lg:px-32 py-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-Brandcolor text-3xl mb-6 text-left">Who We Are</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6 text-left text-justify">
+            We are architects and remodelers. Designers and project managers. Makers and artisans. Being one of us means being passionate about what you do, and the people who depend on you.
+        </p>
+        <a 
+            href="#" 
+            class="text-Brandcolor hover:text-BrandcolorHover text-lg font-medium hover:underline hover:opacity-80"
+        >
+            Meet Our Team
+        </a>
+    </div>
+</section>
+
+<!-- Meet Our Sister Brand Section -->
+<section class="px-8 md:px-16 lg:px-32 py-4">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-Brandcolor text-3xl mb-6 text-left">Meet Our Sister Brand</h2>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6 text-left text-justify">
+            FRED is the first name in home improvement. From small-scale updates to larger renovation and installation projects, the FRED team builds, installs, trims, and fits, keeping your home looking great.
+        </p>
+        <div class="text-left mt-4">
+            <img 
+                src="https://b2508663.smushcdn.com/2508663/wp-content/uploads/2023/09/Fred-Stacked-Purple-1-300x192.jpg?lossy=1&amp;strip=1&amp;webp=1" 
+                alt="FRED Logo" 
+                class="h-16 w-auto"
+            >
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="max-w-4xl w-full p-6 mx-auto bg-opacity-100 isolate bg-white">
+    <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">Frequently Asked Questions</h1>
+    
+    <div class="space-y-4">
+        
+        <details class="bg-gray-200 p-4 rounded-md">
+            <summary class="font-semibold text-Brandcolor cursor-pointer">What is Lorem Ipsum?</summary>
+            <p class="text-gray-700 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </details>
+        
+        <details class="bg-gray-200 p-4 rounded-md">
+            <summary class="font-semibold text-Brandcolor cursor-pointer">Why do we use it?</summary>
+            <p class="text-gray-700 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </details>
+        
+        <details class="bg-gray-200 p-4 rounded-md">
+            <summary class="font-semibold text-Brandcolor cursor-pointer">Where does it come from?</summary>
+            <p class="text-gray-700 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </details>
+        
+        <details class="bg-gray-200 p-4 rounded-md">
+            <summary class="font-semibold text-Brandcolor cursor-pointer">Can I use Lorem Ipsum for my project?</summary>
+            <p class="text-gray-700 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </details>
+        
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer Section starts -->
+<div class="flex flex-col bg-opacity-100 isolate">
+    <!-- Footer Section at the End of the Page -->
+    <footer class="bg-Footercolor text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Section with Logo -->
+          <div class="text-center sm:text-left">
+            <!-- Company Logo -->
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" alt="Company Logo" class="w-32 mx-auto sm:mx-0">
+            <p class="mt-2 text-sm text-black">Empowering your business with innovative solutions.</p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
+            <ul class="mt-2 space-y-2 ">
+              <li><a href="/index" class="footer-text">Home</a></li>
+              <li><a href="/pages/service" class="footer-text">Services</a></li>
+              <li><a href="/pages/Area-served" class="footer-text">Area Served</a></li>
+              <li><a href="/pages/about" class="footer-text">About Us</a></li>
+              <li><a href="/pages/blog" class="footer-text">Blog</a></li>
+              <li><a href="/pages/contact" class="footer-text">Contact</a></li>
+              <li><a href="#" class="footer-text">Sitemap</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Contact Us</h4>
+            <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm text-black">City, State, ZIP</p>
+            <p class="mt-2 text-sm">
+              Email: <a href="mailto:contact@company.com" class="footer-text">contact@company.com</a>
+            </p>
+            <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left">
+            <h5 class="text-lg font-semibold text-Brandcolor">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-gray-700 pt-4">
+            <div class="flex justify-center items-center space-x-2">
+              <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
+              <a href="/pages/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+              <a href="/pages/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
+            </div>
+          </div>
+          
+      </div>
+    </footer>
+</div>
+  <!-- Footer Section ends -->
+  
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

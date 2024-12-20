@@ -13,106 +13,100 @@
     <link href="/css/contact.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
     <header class="headerl1">
-        <div class="headerl2">
-            <a href="/index">
-                <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
-                     alt="Case Logo" 
-                     class="h-10">
-            </a>
-            <div class="lg:hidden">
-                <button id="menu-icon" class="large_menu_icon">
-                    <i class="bx bx-menu"></i>
-                </button>
-            </div>
-            <nav class="hidden lg:flex items-center space-x-6">
-                <!-- Dropdown Menu Items -->
-                <a href="/index" class="headeritems">Home</a>
-                <div class="relative dropdown">
-                    <a href="/about" class="headeritems">About</a>
-                    <div class="dropdown-content">
-                        <a href="/testimonials">Testimonials</a>
-                        <a href="/blog">Blog</a>
-                    </div>
-                </div>
-                <div class="relative dropdown">
-                    <a href="/service" class="headeritems">Services</a>
-                    <div class="dropdown-content">
-                        <a href="/kitchen">Kitchen</a>
-                        <a href="/bath">Bath</a>
-                        <a href="/Additions">Additions</a>
-                        <a href="/indoorliving">Indoor Living</a>
-                        <a href="/outdoorliving">Outdoor Living</a>
-                    </div>
-                </div>
-                <!-- <div class="relative dropdown"> -->
-                    <a href="/Area-served" class="headeritems">Area Served</a>
-                    <!-- <div class="dropdown-content">
-                        <a href="#">Projects</a>
-                        <a href="#">Clients</a>
-                    </div> -->
-                <!-- </div> -->
-               
-
-                <a href="/contact" class="headeritems">Contact</a>
-            </nav>
+    <div class="headerl2">
+        <a href="/index">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
         </div>
-
-       <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden lg:hidden">
-  <div class="px-4 py-4 space-y-2">
-    <!-- Home Link -->
-    <div>
-      <a href="/index" class="headeritems">Home</a>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="/index" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="/pages/about" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/pages/testimonials">Testimonials</a>
+                    
+                        <a href="/pages/blog">Blog</a>
+                    
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="/pages/service" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/Services/kitchen">Kitchen</a>
+                    
+                        <a href="/Services/bath">Bath</a>
+                    
+                        <a href="/Services/Additions">Additions</a>
+                    
+                        <a href="/Services/indoorliving">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </nav>
     </div>
 
-    <!-- About Link with Dropdown -->
-    <div>
-      <div class="flex justify-between items-center">
-        <a href="/about" class="headeritems">About</a>
-        <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
-          <i class="bx bx-chevron-down"></i>
-        </button>
-      </div>
-      <div id="mobile-about-dropdown" class="hidden">
-        <a href="/testimonials" class="mobile_header_subitems">Testimonials</a>
-        <a href="/blog" class="mobile_header_subitems">Our Blogs</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="/index" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/about" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    
+                        <a href="/pages/testimonials" class="mobile_header_subitems">Testimonials</a>
+                    
+                        <a href="/pages/blog" class="mobile_header_subitems">Blog</a>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/service" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    
+                        <a href="/Services/kitchen" class="mobile_header_subitems">Kitchen</a>
+                    
+                        <a href="/Services/bath" class="mobile_header_subitems">Bath</a>
+                    
+                        <a href="/Services/Additions" class="mobile_header_subitems">Additions</a>
+                    
+                        <a href="/Services/indoorliving" class="mobile_header_subitems">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </div>
     </div>
+</header>
 
-    <!-- Services Link with Dropdown -->
-    <div>
-      <div class="flex justify-between items-center">
-        <a href="/service" class="headeritems">Services</a>
-        <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
-          <i class="bx bx-chevron-down"></i>
-        </button>
-      </div>
-      <div id="mobile-services-dropdown" class="hidden">
-        <a href="/kitchen" class="mobile_header_subitems">Kitchen</a>
-        <a href="/bath" class="mobile_header_subitems">Bath</a>
-        <a href="/Additions" class="mobile_header_subitems">Additions</a>
-        <a href="/indoorliving" class="mobile_header_subitems">Indoor Living</a>
-        <a href="/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
 
-      </div>
-    </div>
-      <div>
-        <a href="/Area-served" class="headeritems">Area Served</a>
-      </div>
-    <!-- Contact Link -->
-    <div>
-      <a href="/contact" class="headeritems">Contact</a>
-    </div>
-
-    
-  </div>
-</div>
-
-    </header>
     <main>
         <!-- About Section -->
 <div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
@@ -126,216 +120,12 @@
     </div>
 </div>
 
-<section class="py-16 px-6 sm:px-16 lg:px-48 ">
-    <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-semibold text-Brandcolor 0 mb-8 text-left">
-            Additions
-        </h2>
-        <p class="text-lg text-gray-600 mb-12 text-left">
-            Whether you’re expanding for a growing family, re-imagining your kitchen space, or envisioning a 1st floor bath, you’re getting closer to the total home experience you’ve always wanted.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2161329503/photo/sunshine-entry-into-the-retro-living-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=Kn9m5rV8RDkTgd-6ehcCWhTKXjc4_0cKXZLWgBxfrfw=" alt="Addition 1" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2157389785/photo/there-is-brown-modular-sofa-and-armchair-in-the-clean-living-room.webp?a=1&b=1&s=612x612&w=0&k=20&c=QWQ5IZp3PvQxocw_SrfY1Q3T3Qx3aGvBmDyR1ZEOK1Y=" alt="Addition 2" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2112749005/photo/modern-contemporary-style-small-wooden-terrace-in-lush-garden-with-house-interior-background.jpg?s=612x612&w=0&k=20&c=rtiD90a0nA3UpHfGsL1GnVG19GjIZd8H762MTgGcJug=" alt="Addition 3" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="flex justify-center mb-4">
-    <a href="#" class="bg-Brandcolor text-white px-6 py-3  text-lg font-medium hover:bg-BrandcolorHover transition duration-300">
-        Learn More
-    </a>
-</div>
+<div class="lg:mt-12"></div>
 
 
-<section class=" py-2 px-6 sm:px-16 lg:px-48 ">
-    <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-semibold text-Brandcolor 0 mb-8 text-left">
-            Kitchen
-        </h2>
-        <p class="text-lg text-gray-600 mb-12 text-left">
-            Whether you’re expanding for a growing family, re-imagining your kitchen space, or envisioning a 1st floor bath, you’re getting closer to the total home experience you’ve always wanted.
-        </p>
+    </main>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1317490973/photo/modern-modular-kitchen-interior-range-cooker-and-chimney-hood.jpg?s=612x612&w=0&k=20&c=gfYMtdH3V-G-XODOocjmdPo39kt6v3vBt9jJhXxhWFE=" alt="Addition 1" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1560594282/photo/wide-shot-of-an-empty-cosy-kitchen-decorated-with-indian-style-stylish-traditional-south.jpg?s=612x612&w=0&k=20&c=ULQjlbBVDq0rDTWE7_F8L6fJB4uFJFV1o2ypQFUximw=" alt="Addition 2" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1300285870/photo/interior-design-architecture-computer-generated-image-of-kitchen-architectural-visualization.jpg?s=612x612&w=0&k=20&c=EE4IujoJohlHuLVp-kmpChfcCVE_mHIUgvWPf516300=" alt="Addition 3" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="flex justify-center mt-12 mb-4">
-    <a href="#" class="bg-Brandcolor text-white px-6 py-3  text-lg font-medium hover:bg-BrandcolorHover transition duration-300">
-        Learn More
-    </a>
-</div>
-
-<section class="py-2 px-6 sm:px-16 lg:px-48 ">
-    <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-semibold text-Brandcolor 0 mb-8 text-left">
-            Bath
-        </h2>
-        <p class="text-lg text-gray-600 mb-12 text-left">
-            Whether you’re expanding for a growing family, re-imagining your kitchen space, or envisioning a 1st floor bath, you’re getting closer to the total home experience you’ve always wanted.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2170317632/photo/luxury-bathroom-interior-with-shower-toilet-and-mirror.jpg?s=612x612&w=0&k=20&c=KfdwDazOC1R6qcAxO1qE_PAX1ohOWmZRHEF9FSbTjEk=" alt="Addition 1" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1380717443/photo/dark-blue-modern-luxury-bathroom.jpg?s=612x612&w=0&k=20&c=lNkSjjaHRV0qB1M0P23EXPC0owGBvqf7RoAU36mmo3Q=" alt="Addition 2" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1084656062/photo/interior-of-a-hotel-bathroom.jpg?s=612x612&w=0&k=20&c=rZxxHZ_QxV4SZtNwi1izI1jKLckdS9Uz0LZc_M41_OE=" alt="Addition 3" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="flex justify-center mt-12 mb-4">
-    <a href="#" class="bg-Brandcolor text-white px-6 py-3  text-lg font-medium hover:bg-BrandcolorHover transition duration-300">
-        Learn More
-    </a>
-</div>
-
-
-<section class="py-2 px-6 sm:px-16 lg:px-48 ">
-    <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-semibold text-Brandcolor 0 mb-8 text-left">
-            Indoor living
-        </h2>
-        <p class="text-lg text-gray-600 mb-12 text-left">
-            Whether you’re expanding for a growing family, re-imagining your kitchen space, or envisioning a 1st floor bath, you’re getting closer to the total home experience you’ve always wanted.
-        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1182454657/photo/bohemian-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=qw37MGIiTL_jML3_Tbm4bM-jNLCrocSWj7DanhBr_bY=" alt="Addition 1" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2157390379/photo/living-and-dining-room-in-white-and-beige-tones-sofa-table-chairs-decor-contemporary-interior.jpg?s=612x612&w=0&k=20&c=dpbibjY8Qj8gvJFGev3FFf-owS34YCEfTS_ghm-givs=" alt="Addition 2" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1212833920/photo/home-interior-with-ethnic-boho-decoration-living-room-in-brown-warm-color.jpg?s=612x612&w=0&k=20&c=ts6eRIMWcThQqy5FbSqRWcF6z3x5Znhs-AUeNE_du8M=" alt="Addition 3" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="flex justify-center mt-12 mb-4">
-    <a href="#" class="bg-Brandcolor text-white px-6 py-3  text-lg font-medium hover:bg-BrandcolorHover transition duration-300">
-        Learn More
-    </a>
-</div>
-
-
-<section class="py-2 px-6 sm:px-16 lg:px-48 ">
-    <div class="max-w-screen-xl mx-auto">
-        <h2 class="text-3xl font-semibold text-Brandcolor 0 mb-8 text-left">
-            Outdoor living
-        </h2>
-        <p class="text-lg text-gray-600 mb-12 text-left">
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere pulvinar rhoncus. Curabitur vel varius tellus. Phasellus ac ante ut dui ultricies mattis quis sed tellus. Phasellus blandit sollicitudin lorem eget accumsan.        </p>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=612x612&w=0&k=20&c=vwbyywizQ3ofQFUL9-OPXJyu6A44t9oJ6ZSDqeql6Yw=" alt="Addition 1" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/1226810761/photo/trendy-furniture-lights-lanterns-and-candles-in-the-garden-at-night.jpg?s=612x612&w=0&k=20&c=P9hT0K0vyMlInNEQ0WCcWonOWF3eUAlxtFFkeFfETuI=" alt="Addition 2" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="relative overflow-hidden rounded-lg shadow-lg group">
-                <img src="https://media.istockphoto.com/id/2181662961/photo/modern-outdoor-patio-seating-with-poolside-view-and-hanging-greenery.jpg?s=612x612&w=0&k=20&c=00sYKylnw9-DKziTQr_2dO-AbP6LNhMqh_-V2NqTeGc=" alt="Addition 3" class="w-full h-auto object-cover transition-transform duration-300 ease-in-out group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-90 py-4 px-6">
-                    <p class="text-gray-800 text-base text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="flex justify-center mt-12 mb-4">
-    <a href="#" class="bg-Brandcolor text-white px-6 py-3  text-lg font-medium hover:bg-BrandcolorHover transition duration-300">
-        Learn More
-    </a>
-</div>
-
-
-
-
-
-      </main>
-
-<!-- Footer Section starts -->
+    <!-- Footer Section starts -->
 <div class="flex flex-col bg-opacity-100 isolate">
     <!-- Footer Section at the End of the Page -->
     <footer class="bg-Footercolor text-center py-10">
@@ -352,14 +142,22 @@
           <!-- Quick Links Section -->
           <div class="text-center sm:text-left">
             <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
-            <ul class="mt-2 space-y-2 ">
-              <li><a href="/index" class="footer-text">Home</a></li>
-              <li><a href="/service" class="footer-text">Services</a></li>
-              <li><a href="/Area-served" class="footer-text">Area Served</a></li>
-              <li><a href="/about" class="footer-text">About Us</a></li>
-              <li><a href="/blog" class="footer-text">Blog</a></li>
-              <li><a href="/contact" class="footer-text">Contact</a></li>
-              <li><a href="#" class="footer-text">Sitemap</a></li>
+            <ul class="mt-2 space-y-2">
+              
+                <li><a href="/index" class="footer-text">Home</a></li>
+              
+                <li><a href="/pages/service" class="footer-text">Services</a></li>
+              
+                <li><a href="/pages/Area-served" class="footer-text">Area Served</a></li>
+              
+                <li><a href="/pages/about" class="footer-text">About Us</a></li>
+              
+                <li><a href="/pages/blog" class="footer-text">Blog</a></li>
+              
+                <li><a href="/pages/contact" class="footer-text">Contact</a></li>
+              
+                <li><a href="#" class="footer-text">Sitemap</a></li>
+              
             </ul>
           </div>
   
@@ -378,38 +176,41 @@
           <div class="text-center sm:text-left">
             <h5 class="text-lg font-semibold text-Brandcolor">Follow Us</h5>
             <div class="mt-4 flex justify-center sm:justify-start space-x-6">
-              <a href="https://facebook.com" target="_blank" class="footer-text text-2xl">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-              <a href="https://twitter.com" target="_blank" class="footer-text text-2xl">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-              <a href="https://linkedin.com" target="_blank" class="footer-text text-2xl">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" class="footer-text text-2xl">
-                <i class="fab fa-instagram-square"></i>
-              </a>
+              
+                <a href="https://facebook.com" target="_blank" class="footer-text text-2xl">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              
+                <a href="https://twitter.com" target="_blank" class="footer-text text-2xl">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              
+                <a href="https://linkedin.com" target="_blank" class="footer-text text-2xl">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              
+                <a href="https://instagram.com" target="_blank" class="footer-text text-2xl">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              
             </div>
           </div>
         </div>
   
         <!-- Footer Bottom Section -->
         <div class="border-t border-gray-700 pt-4">
-            <div class="flex justify-center items-center space-x-2">
-              <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
-              <a href="/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
-              <a href="/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
-            </div>
+          <div class="flex justify-center items-center space-x-2">
+            <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
+            <a href="/pages/privacy&amp;policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+            <a href="/pages/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
           </div>
-          
+        </div>
       </div>
     </footer>
 </div>
-  <!-- Footer Section ends -->
-  
-      
-      
+<!-- Footer Section ends -->
+
+
     <script src="/js/script.js"></script>
 </body>
 </html>

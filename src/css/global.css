@@ -5,6 +5,7 @@
 .footer-text{
     @apply text-black hover:text-BrandcolorHover;
 }
+
 /* nav-bar */
 .dropdown-content a:hover {
     @apply bg-Brandcolor text-white;
@@ -543,5 +544,4 @@ hero-section */
         @apply px-10 py-4; 
     }
 }
-
 

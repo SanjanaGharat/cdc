@@ -1,0 +1,131 @@
+
+
+<section class="py-12 px-4 pt-32">
+    <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center">
+      <!-- Image Section -->
+      <div class="relative w-full lg:w-7/12 mb-8 lg:mb-0">
+        <img 
+          src="{{Service_img}}" 
+          alt="Descriptive Image" 
+           class="w-full h-auto"
+        />
+        <!-- White Overlay at the Bottom Left -->
+        <div class="absolute bottom-0 left-0 bg-white bg-opacity-75 p-4  w-3/4 lg:w-2/3">
+          <p class="text-gray-700 font-medium text-base">{{Service_img_description}} </p>
+        </div>
+        <!-- Red Overlay on the Right (Half on Image, Half Outside) -->
+        <div class="absolute top-1/4 right-[-2rem] bg-Brandcolor w-12 h-1/2 mix-blend-multiply "></div>
+      </div>
+  
+      <!-- Content Section -->
+      <div class="w-full lg:w-5/12 lg:pl-16"> <!-- Increased padding-left here -->
+        <h1 class="text-2xl lg:text-3xl  text-Brandcolor mb-4">
+            {{Service_title}}
+        </h1>
+        <p class="text-lg text-gray-600 leading-relaxed">{{Service_description}}        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <section class="py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-Brandcolor mb-8">
+        Our Past Work
+      </h2>
+      <p class="text-lg text-gray-600 mb-12">
+        Take a look at some of the great projects we have completed for our clients.
+      </p>
+  
+      <!-- Image Grid -->
+      <div id="image-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Images will be added dynamically here -->
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <section class="py-12 px-4">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl font-semibold text-Brandcolor mb-8">
+        Great work comes from great teams.<br> Meet the experts who brought this project to life.
+      </h2>
+  
+     <!-- Expert Images Section -->
+<div class="flex flex-wrap justify-center gap-8">
+    {% for expert in experts %}
+    <div class="relative w-80 h-96 overflow-hidden shadow-lg">
+      <img 
+        src="{{ expert.image }}" 
+        alt="{{ expert.alt }}" 
+        class="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-110"
+      />
+      <!-- White Overlay with Text -->
+      <div class="absolute bottom-0 left-0 w-full bg-white bg-opacity-75 p-4">
+        <p class="text-gray-700 font-medium text-base">{{ expert.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+    </div>
+  </section>
+
+  <section class="py-12 px-4 ">
+    <div class="max-w-screen-xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+        Book This Service Now!
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Don't wait! Our expert team is ready to bring your vision to life. Contact us today to get started on your project.
+      </p>
+  
+      <!-- Call to Action Button -->
+      <a href="/contact" class="inline-block bg-Brandcolor text-white font-semibold py-3 px-6  text-lg transition-all hover:bg-BrandcolorHover">
+        Book Now
+      </a>
+    </div>
+  </section>
+  
+
+  <script>
+    // Function to create image cards
+    function createImageCard(project) {
+      const card = document.createElement("div");
+      card.classList.add("relative");
+  
+      const img = document.createElement("img");
+      img.src = project.src;
+      img.alt = project.alt;
+      img.classList.add("w-full", "h-full", "object-cover");
+  
+      const overlay = document.createElement("div");
+      overlay.classList.add("absolute", "bottom-0", "left-0", "bg-white", "bg-opacity-75", "p-4", "w-full");
+      const overlayText = document.createElement("p");
+      overlayText.classList.add("text-gray-700", "font-medium", "text-base");
+      overlayText.textContent = project.description;
+      overlay.appendChild(overlayText);
+  
+      card.appendChild(img);
+      card.appendChild(overlay);
+  
+      return card;
+    }
+  
+    // Function to load images dynamically into the grid
+    function loadImages() {
+      const grid = document.getElementById("image-grid");
+      projects.forEach(project => {
+        const imageCard = createImageCard(project);
+        grid.appendChild(imageCard);
+      });
+    }
+  
+    // Load images when the page loads
+    window.onload = loadImages;
+  </script>
+  

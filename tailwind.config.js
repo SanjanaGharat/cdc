@@ -1,13 +1,9 @@
-module.exports = {
-  content: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.js"],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [],
   theme: {
-    extend: {
-      colors: {
-        Brandcolor: "#c11f1f",
-        BrandcolorHover:"#991B1B",
-        Footercolor: "#edf2f7",
-      },
-    },
+    extend: {},
   },
   plugins: [],
-};
+}
+

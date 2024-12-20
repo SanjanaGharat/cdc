@@ -1,23 +1,25 @@
 {
-  "name": "casedesign",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module", 
-  "scripts": {
-    "build:css": "npx tailwindcss -i ./src/css/global.css -o ./src/css/tailwind.css --watch",
-    "build": "npm run build:css && npx eleventy",
-    "start": "npm run build:css && npx eleventy --serve"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15"
-  }
+    "name": "casedesign",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build:css": "npx tailwindcss -i ./src/css/global.css -o ./src/css/tailwind.css --watch",
+        "build": "npm run build:css && npx eleventy",
+        "start": "npm run build:css && npx eleventy --serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@11ty/eleventy": "^3.0.0",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.17"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "nodemailer": "^6.9.16"
+    }
 }

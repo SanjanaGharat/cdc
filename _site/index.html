@@ -13,106 +13,100 @@
     <link href="/css/contact.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
     <header class="headerl1">
-        <div class="headerl2">
-            <a href="/index">
-                <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
-                     alt="Case Logo" 
-                     class="h-10">
-            </a>
-            <div class="lg:hidden">
-                <button id="menu-icon" class="large_menu_icon">
-                    <i class="bx bx-menu"></i>
-                </button>
-            </div>
-            <nav class="hidden lg:flex items-center space-x-6">
-                <!-- Dropdown Menu Items -->
-                <a href="/index" class="headeritems">Home</a>
-                <div class="relative dropdown">
-                    <a href="/about" class="headeritems">About</a>
-                    <div class="dropdown-content">
-                        <a href="/testimonials">Testimonials</a>
-                        <a href="/blog">Blog</a>
-                    </div>
-                </div>
-                <div class="relative dropdown">
-                    <a href="/service" class="headeritems">Services</a>
-                    <div class="dropdown-content">
-                        <a href="/kitchen">Kitchen</a>
-                        <a href="/bath">Bath</a>
-                        <a href="/Additions">Additions</a>
-                        <a href="/indoorliving">Indoor Living</a>
-                        <a href="/outdoorliving">Outdoor Living</a>
-                    </div>
-                </div>
-                <!-- <div class="relative dropdown"> -->
-                    <a href="/Area-served" class="headeritems">Area Served</a>
-                    <!-- <div class="dropdown-content">
-                        <a href="#">Projects</a>
-                        <a href="#">Clients</a>
-                    </div> -->
-                <!-- </div> -->
-               
-
-                <a href="/contact" class="headeritems">Contact</a>
-            </nav>
+    <div class="headerl2">
+        <a href="/index">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
         </div>
-
-       <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden lg:hidden">
-  <div class="px-4 py-4 space-y-2">
-    <!-- Home Link -->
-    <div>
-      <a href="/index" class="headeritems">Home</a>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="/index" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="/pages/about" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/pages/testimonials">Testimonials</a>
+                    
+                        <a href="/pages/blog">Blog</a>
+                    
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="/pages/service" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/Services/kitchen">Kitchen</a>
+                    
+                        <a href="/Services/bath">Bath</a>
+                    
+                        <a href="/Services/Additions">Additions</a>
+                    
+                        <a href="/Services/indoorliving">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </nav>
     </div>
 
-    <!-- About Link with Dropdown -->
-    <div>
-      <div class="flex justify-between items-center">
-        <a href="/about" class="headeritems">About</a>
-        <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
-          <i class="bx bx-chevron-down"></i>
-        </button>
-      </div>
-      <div id="mobile-about-dropdown" class="hidden">
-        <a href="/testimonials" class="mobile_header_subitems">Testimonials</a>
-        <a href="/blog" class="mobile_header_subitems">Our Blogs</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="/index" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/about" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    
+                        <a href="/pages/testimonials" class="mobile_header_subitems">Testimonials</a>
+                    
+                        <a href="/pages/blog" class="mobile_header_subitems">Blog</a>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/service" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    
+                        <a href="/Services/kitchen" class="mobile_header_subitems">Kitchen</a>
+                    
+                        <a href="/Services/bath" class="mobile_header_subitems">Bath</a>
+                    
+                        <a href="/Services/Additions" class="mobile_header_subitems">Additions</a>
+                    
+                        <a href="/Services/indoorliving" class="mobile_header_subitems">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </div>
     </div>
+</header>
 
-    <!-- Services Link with Dropdown -->
-    <div>
-      <div class="flex justify-between items-center">
-        <a href="/service" class="headeritems">Services</a>
-        <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
-          <i class="bx bx-chevron-down"></i>
-        </button>
-      </div>
-      <div id="mobile-services-dropdown" class="hidden">
-        <a href="/kitchen" class="mobile_header_subitems">Kitchen</a>
-        <a href="/bath" class="mobile_header_subitems">Bath</a>
-        <a href="/Additions" class="mobile_header_subitems">Additions</a>
-        <a href="/indoorliving" class="mobile_header_subitems">Indoor Living</a>
-        <a href="/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
 
-      </div>
-    </div>
-      <div>
-        <a href="/Area-served" class="headeritems">Area Served</a>
-      </div>
-    <!-- Contact Link -->
-    <div>
-      <a href="/contact" class="headeritems">Contact</a>
-    </div>
-
-    
-  </div>
-</div>
-
-    </header>
     <main>
         
 
@@ -133,7 +127,7 @@
         <p class="hero-sub-text">
             Are our ultimate pursuits whether you are considering an outdoor oasis, a food lover&#39;s kitchen, or an owner&#39;s suite.
         </p>
-        <a href="/contact-us" class="contact-btn">
+        <a href="/contact" class="contact-btn">
             Contact Us
         </a>
     </div>
@@ -167,7 +161,7 @@
             <div class="work__block">
                 <!-- <a href="#" class="work__link"> -->
                     <div class="work__block__bg-wrapper">
-                        <div class="work__block__bg" style="background-image: url('https://media.istockphoto.com/id/1308282338/photo/modern-bathroom-interior-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=8PajQ928amNL0DOZn7IFChezI3gqAwmPsXRqHrUSaXQ=');"></div>
+                        <div class="work__block__bg" style="background-image: url(https://media.istockphoto.com/id/1308282338/photo/modern-bathroom-interior-stock-photo.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=8PajQ928amNL0DOZn7IFChezI3gqAwmPsXRqHrUSaXQ=);"></div>
                     </div>
                     <div class="work__overlay fade-in-up work__link">
                         <div class="work__overlay__text">
@@ -185,12 +179,12 @@
             <div class="work__block">
                 <!-- <a href="#" class="work__link"> -->
                     <div class="work__block__bg-wrapper">
-                        <div class="work__block__bg" style="background-image: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2l0Y2h8ZW58MHx8MHx8fDA%3D');"></div>
+                        <div class="work__block__bg" style="background-image: url(https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a2l0Y2h8ZW58MHx8MHx8fDA%3D);"></div>
                     </div>
                     <div class="work__overlay fade-in-up early work__link">
                         <div class="work__overlay__text">
                             <h6 class="h7">Kitchens</h6>
-                            <p>Your kitchen is the heart of your home, and at Case we offer over 60 years of experience bringing dream kitchens to life.</p>
+                    <p>Your kitchen is the heart of your home, and at Case we offer over 60 years of experience bringing dream kitchens to life.</p>
                         </div>
                     </div>
                 <!-- </a> -->
@@ -205,12 +199,12 @@
             <div class="work__block">
                 <!-- <a href="#" class="work__link"> -->
                     <div class="work__block__bg-wrapper">
-                        <div class="work__block__bg" style="background-image: url('https://plus.unsplash.com/premium_photo-1672308004773-3ca433fdcaa6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGxpdmluZ3xlbnwwfHwwfHx8MA%3D%3D');"></div>
+                        <div class="work__block__bg" style="background-image: url(&#39;https://plus.unsplash.com/premium_photo-1672308004773-3ca433fdcaa6?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGxpdmluZ3xlbnwwfHwwfHx8MA%3D%3D&#39;);"></div>
                     </div>
                     <div class="work__overlay fade-in-up work__link">
                         <div class="work__overlay__text">
                             <h6 class="h7">Outdoor Living</h6>
-                            <p>Beautiful and built to last: that's the promise we make when taking on any exterior project, from decks to patios and beyond.</p>
+                            <p>Beautiful and built to last: that&#39;s the promise we make when taking on any exterior project, from decks to patios and beyond.</p>
                         </div>
                     </div>
                 <!-- </a> -->
@@ -224,12 +218,12 @@
             <div class="work__block">
                 <!-- <a href="#" class="work__link"> -->
                     <div class="work__block__bg-wrapper">
-                        <div class="work__block__bg" style="background-image: url('https://media.istockphoto.com/id/925376720/photo/open-door-with-soft-focus-and-over-light-in-the-background.jpg?s=612x612&w=0&k=20&c=jcisx-h2h59npKkvJ1FO2bSA_FIHF-QdkNbtwgXDCGs=');"></div>
+                        <div class="work__block__bg" style="background-image: url(https://media.istockphoto.com/id/925376720/photo/open-door-with-soft-focus-and-over-light-in-the-background.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=jcisx-h2h59npKkvJ1FO2bSA_FIHF-QdkNbtwgXDCGs=);"></div>
                     </div>
                     <div class="work__overlay fade-in-up work__link work__link">
                         <div class="work__overlay__text">
                             <h6 class="h7">Indoor Living</h6>
-                            <p>For a comprehensive interior design, or just the best trim molding you've ever seen—whatever the need, we've been there and perfected it.</p>
+                            <p>For a comprehensive interior design, or just the best trim molding you&#39;ve ever seen—whatever the need, we&#39;ve been there and perfected it.</p>
                         </div>
                     </div>
                 <!-- </a> -->
@@ -239,7 +233,7 @@
 
     <div class="flex justify-center items-center w-full">
         <div class="text-center my-8">
-            <a href="/service" class="inline-block px-8 py-4 bg-Brandcolor text-white text-base transition-transform duration-200 hover:bg-BrandcolorHover hover:scale-105">
+            <a href="/pages/service" class="inline-block px-8 py-4 bg-Brandcolor text-white text-base transition-transform duration-200 hover:bg-BrandcolorHover hover:scale-105">
                 All Work
             </a>
         </div>
@@ -261,7 +255,7 @@
         </h2>
 
         <!-- Button -->
-        <a href="/contact" class="text-banner-button">
+        <a href="/pages/contact" class="text-banner-button">
             Contact Us 
         </a>
     </div>
@@ -279,7 +273,7 @@
         <!-- First Blog Card -->
         <div class="blog-post mb-8 relative">
             <a href="#" class="block relative">
-                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url('https://b2508663.smushcdn.com/2508663/wp-content/uploads/2019/03/allie-mann-768x443.jpg?lossy=1&strip=1&webp=1');">
+                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url(https://b2508663.smushcdn.com/2508663/wp-content/uploads/2019/03/allie-mann-768x443.jpg?lossy=1&amp;strip=1&amp;webp=1);">
                     <!-- White Bottom Overlay Inside Image -->
                     <div class="absolute bottom-0 left-0 right-0 bg-white opacity-80 h-[50px] flex items-center justify-center px-4">
                         <div class="text-Brandcolor text-sm font-semibold">
@@ -296,7 +290,7 @@
     <div class="blog__right">
         <div class="blog-post mb-8 relative">
             <a href="#" class="block relative">
-                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url('https://b2508663.smushcdn.com/2508663/wp-content/uploads/2017/10/elena-ed-2-768x406.png?lossy=1&strip=1&webp=1');">
+                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url(https://b2508663.smushcdn.com/2508663/wp-content/uploads/2017/10/elena-ed-2-768x406.png?lossy=1&amp;strip=1&amp;webp=1);">
                     <!-- White Bottom Overlay Inside Image -->
                     <div class="absolute bottom-0 left-0 right-0 bg-white opacity-80 h-[50px] flex items-center justify-center px-4">
                         <div class="text-Brandcolor text-sm font-semibold">
@@ -308,7 +302,7 @@
         </div>
         <div class="blog-post mb-8 relative">
             <a href="#" class="block relative">
-                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url('https://b2508663.smushcdn.com/2508663/wp-content/uploads/2023/01/Case_Court2022_02440-768x512.jpg?lossy=1&strip=1&webp=1');">
+                <div class="blog-post__bg bg-cover bg-center w-full sm:w-[500px] h-[350px] sm:h-[400px]" style="background-image: url(https://b2508663.smushcdn.com/2508663/wp-content/uploads/2023/01/Case_Court2022_02440-768x512.jpg?lossy=1&amp;strip=1&amp;webp=1);">
                     <!-- White Bottom Overlay Inside Image -->
                     <div class="absolute bottom-0 left-0 right-0 bg-white opacity-80 h-[50px] flex items-center justify-center px-4">
                         <div class="text-Brandcolor text-sm font-semibold">
@@ -323,7 +317,7 @@
 
 <div class="flex justify-center items-center w-full bg-opacity-100 isolate">
     <div class="text-center my-8">
-        <a href="/blog" class="inline-block px-8 py-4 bg-Brandcolor text-white text-base transition-transform duration-200 hover:bg-BrandcolorHover hover:scale-105">
+        <a href="/pages/blog" class="inline-block px-8 py-4 bg-Brandcolor text-white text-base transition-transform duration-200 hover:bg-BrandcolorHover hover:scale-105">
             ALL Blogs
         </a>
     </div>
@@ -374,9 +368,9 @@
 </div>
 
 
-      </main>
+    </main>
 
-<!-- Footer Section starts -->
+    <!-- Footer Section starts -->
 <div class="flex flex-col bg-opacity-100 isolate">
     <!-- Footer Section at the End of the Page -->
     <footer class="bg-Footercolor text-center py-10">
@@ -395,11 +389,11 @@
             <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
             <ul class="mt-2 space-y-2 ">
               <li><a href="/index" class="footer-text">Home</a></li>
-              <li><a href="/service" class="footer-text">Services</a></li>
-              <li><a href="/Area-served" class="footer-text">Area Served</a></li>
-              <li><a href="/about" class="footer-text">About Us</a></li>
-              <li><a href="/blog" class="footer-text">Blog</a></li>
-              <li><a href="/contact" class="footer-text">Contact</a></li>
+              <li><a href="/pages/service" class="footer-text">Services</a></li>
+              <li><a href="/pages/Area-served" class="footer-text">Area Served</a></li>
+              <li><a href="/pages/about" class="footer-text">About Us</a></li>
+              <li><a href="/pages/blog" class="footer-text">Blog</a></li>
+              <li><a href="/pages/contact" class="footer-text">Contact</a></li>
               <li><a href="#" class="footer-text">Sitemap</a></li>
             </ul>
           </div>
@@ -439,8 +433,8 @@
         <div class="border-t border-gray-700 pt-4">
             <div class="flex justify-center items-center space-x-2">
               <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
-              <a href="/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
-              <a href="/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
+              <a href="/pages/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+              <a href="/pages/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
             </div>
           </div>
           
@@ -449,8 +443,7 @@
 </div>
   <!-- Footer Section ends -->
   
-      
-      
+
     <script src="/js/script.js"></script>
 </body>
 </html>

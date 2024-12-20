@@ -1,0 +1,33 @@
+{
+    "company": {
+      "logo": "https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg",
+      "description": "Empowering your business with innovative solutions."
+    },
+    "quickLinks": [
+      { "name": "Home", "url": "/index" },
+      { "name": "Services", "url": "/pages/service" },
+      { "name": "Area Served", "url": "/pages/Area-served" },
+      { "name": "About Us", "url": "/pages/about" },
+      { "name": "Blog", "url": "/pages/blog" },
+      { "name": "Contact", "url": "/pages/contact" },
+      { "name": "Sitemap", "url": "#" }
+    ],
+    "contact": {
+      "address": "123 Main Street, Suite 500",
+      "city": "City, State, ZIP",
+      "email": "contact@company.com",
+      "phone": "+1 (123) 456-7890"
+    },
+    "socialMedia": [
+      { "platform": "Facebook", "url": "https://facebook.com", "iconClass": "fab fa-facebook-square" },
+      { "platform": "Twitter", "url": "https://twitter.com", "iconClass": "fab fa-twitter-square" },
+      { "platform": "LinkedIn", "url": "https://linkedin.com", "iconClass": "fab fa-linkedin" },
+      { "platform": "Instagram", "url": "https://instagram.com", "iconClass": "fab fa-instagram-square" }
+    ],
+    "footerBottom": {
+      "text": "© 2024 Your Company. All rights reserved.",
+      "privacyPolicy": "/pages/privacy&policy",
+      "termsConditions": "/pages/terms"
+    }
+  }
+  

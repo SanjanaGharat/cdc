@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseDesgin</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="headerl1">
+    <div class="headerl2">
+        <a href="/index">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="/index" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="/pages/about" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/pages/testimonials">Testimonials</a>
+                    
+                        <a href="/pages/blog">Blog</a>
+                    
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="/pages/service" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/Services/kitchen">Kitchen</a>
+                    
+                        <a href="/Services/bath">Bath</a>
+                    
+                        <a href="/Services/Additions">Additions</a>
+                    
+                        <a href="/Services/indoorliving">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="/index" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/about" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    
+                        <a href="/pages/testimonials" class="mobile_header_subitems">Testimonials</a>
+                    
+                        <a href="/pages/blog" class="mobile_header_subitems">Blog</a>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/service" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    
+                        <a href="/Services/kitchen" class="mobile_header_subitems">Kitchen</a>
+                    
+                        <a href="/Services/bath" class="mobile_header_subitems">Bath</a>
+                    
+                        <a href="/Services/Additions" class="mobile_header_subitems">Additions</a>
+                    
+                        <a href="/Services/indoorliving" class="mobile_header_subitems">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        <!-- About Section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
+    <div>
+        <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
+            <span>Our Blogs</span>
+        </h1>
+    </div>
+    <div class="lg:mr-2">
+        <p class="hero-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+    </div>
+</div>
+
+<section class="py-16 bg-opacity-100 isolate bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-container"></div>
+  
+      <!-- Load More Button -->
+      <div class="mt-8 text-center">
+        <button id="load-more-btn" class="px-6 py-2 text-white bg-Brandcolor rounded-full hover:bg-BrandcolorHover focus:outline-none">Load More</button>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+  
+    const blogData = [
+      {
+        title: 'Blog Title 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+        image: 'https://media.istockphoto.com/id/1312425667/photo/woman-using-social-media-microblogging-app-on-her-phone.jpg?s=612x612&w=0&k=20&c=jOOYTTaH7NV30sNTZiu6A_VH_H8orJoEkjYU6oI0vxA=',
+        link: '/blog/post-1'
+      },
+      {
+        title: 'Blog Title 2',
+        description: 'Curabitur pretium tincidunt lacus. Nulla gravida orci a odio...',
+        image: 'https://media.istockphoto.com/id/489556478/photo/travelling-tools.jpg?s=612x612&w=0&k=20&c=QtLGCZnOrH5vy8Q39Hi9d6TV3_IMxb3kjgdNDh8QZJk=',
+        link: '/blog/post-2'
+      },
+      {
+        title: 'Blog Title 3',
+        description: 'Aenean ligula nibh, in tempus nisl hendrerit non...',
+        image: 'https://media.istockphoto.com/id/1156710615/photo/woman-using-laptop-on-a-bench.webp?a=1&b=1&s=612x612&w=0&k=20&c=c2RSrzXP_-tz54GukgtQ-9YNRMRRSnpeqmTGEK4vfFI=',
+        link: '/blog/post-3'
+      },
+      {
+        title: 'Blog Title 4',
+        description: 'Vivamus finibus sem sit amet ligula...',
+        image: 'https://media.istockphoto.com/id/1924137135/photo/online-blog-search-learning-work-internet-freelance-business-post-website-online-homepage.jpg?s=612x612&w=0&k=20&c=kzmDarljUaSpYSxO4MzDbqRWTT-3qVcVtthJDYzy6qo=',
+        link: '/blog/post-4'
+      },
+      {
+        title: 'Blog Title 5',
+        description: 'Fusce eget ipsum interdum, dapibus erat vitae...',
+        image: 'https://media.istockphoto.com/id/626669886/photo/blogging-blog-word-coder-coding-using-laptop.jpg?s=612x612&w=0&k=20&c=gX9o-kj9RohNBAT2n4wR6fldiTdvnpxZOsetFonpBJw=',
+        link: '/blog/post-5'
+      },
+      {
+        title: 'Blog Title 6',
+        description: 'Maecenas eleifend felis a orci ultricies, at rutrum risus eleifend...',
+        image: 'https://media.istockphoto.com/id/1130150680/photo/blog-and-information-website-concept-workplace-background-with-text.jpg?s=612x612&w=0&k=20&c=BtknpmORYmgMHN5Qty7N0o5mvsk204BG-q4oR8gFl_g=',
+        link: '/blog/post-6'
+      },
+    ];
+  
+    let currentBlogIndex = 0;
+  
+    // Function to render blogs
+    function renderBlogs() {
+      const blogContainer = document.getElementById('blog-container');
+      
+      // Render next 3 blogs
+      const blogsToRender = blogData.slice(currentBlogIndex, currentBlogIndex + 3);
+      blogsToRender.forEach(blog => {
+        const blogCard = document.createElement('div');
+        blogCard.classList.add('relative', 'group', 'overflow-hidden'); 
+        blogCard.innerHTML = `
+          <a href="${blog.link}" class="block">
+            <div class="relative">
+              <img src="${blog.image}" alt="${blog.title}" class="w-full h-auto object-cover transition-transform transform group-hover:scale-110">
+              <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-75 p-4 ">
+                <h3 class="text-lg font-semibold text-Brandcolor hover:underline">${blog.title}</h3>
+                <p class="text-sm text-Brandcolor">${blog.description}</p>
+              </div>
+            </div>
+          </a>
+        `;
+        blogContainer.appendChild(blogCard);
+      });
+  
+      // Update current blog index
+      currentBlogIndex += 3;
+      
+      // Disable the load more button if all blogs are loaded
+      if (currentBlogIndex >= blogData.length) {
+        document.getElementById('load-more-btn').disabled = true;
+        document.getElementById('load-more-btn').innerText = 'No More Blogs';
+      }
+    }
+  
+    // Load initial blogs
+    renderBlogs();
+  
+    // Load more blogs when button is clicked
+    document.getElementById('load-more-btn').addEventListener('click', renderBlogs);
+  </script>
+  
+    </main>
+
+    <!-- Footer Section starts -->
+<div class="flex flex-col bg-opacity-100 isolate">
+    <!-- Footer Section at the End of the Page -->
+    <footer class="bg-Footercolor text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Section with Logo -->
+          <div class="text-center sm:text-left">
+            <!-- Company Logo -->
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" alt="Company Logo" class="w-32 mx-auto sm:mx-0">
+            <p class="mt-2 text-sm text-black">Empowering your business with innovative solutions.</p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
+            <ul class="mt-2 space-y-2 ">
+              <li><a href="/index" class="footer-text">Home</a></li>
+              <li><a href="/pages/service" class="footer-text">Services</a></li>
+              <li><a href="/pages/Area-served" class="footer-text">Area Served</a></li>
+              <li><a href="/pages/about" class="footer-text">About Us</a></li>
+              <li><a href="/pages/blog" class="footer-text">Blog</a></li>
+              <li><a href="/pages/contact" class="footer-text">Contact</a></li>
+              <li><a href="#" class="footer-text">Sitemap</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Contact Us</h4>
+            <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm text-black">City, State, ZIP</p>
+            <p class="mt-2 text-sm">
+              Email: <a href="mailto:contact@company.com" class="footer-text">contact@company.com</a>
+            </p>
+            <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left">
+            <h5 class="text-lg font-semibold text-Brandcolor">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-gray-700 pt-4">
+            <div class="flex justify-center items-center space-x-2">
+              <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
+              <a href="/pages/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+              <a href="/pages/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
+            </div>
+          </div>
+          
+      </div>
+    </footer>
+</div>
+  <!-- Footer Section ends -->
+  
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

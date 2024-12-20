@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaseDesgin</title>
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/contact.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="headerl1">
+    <div class="headerl2">
+        <a href="/index">
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" 
+                 alt="Case Logo" 
+                 class="h-10">
+        </a>
+        <div class="lg:hidden">
+            <button id="menu-icon" class="large_menu_icon">
+                <i class="bx bx-menu"></i>
+            </button>
+        </div>
+        <nav class="hidden lg:flex items-center space-x-6">
+            <a href="/index" class="headeritems">Home</a>
+            <div class="relative dropdown">
+                <a href="/pages/about" class="headeritems">About</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/pages/testimonials">Testimonials</a>
+                    
+                        <a href="/pages/blog">Blog</a>
+                    
+                </div>
+            </div>
+            <div class="relative dropdown">
+                <a href="/pages/service" class="headeritems">Services</a>
+                <div class="dropdown-content">
+                    
+                        <a href="/Services/kitchen">Kitchen</a>
+                    
+                        <a href="/Services/bath">Bath</a>
+                    
+                        <a href="/Services/Additions">Additions</a>
+                    
+                        <a href="/Services/indoorliving">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden">
+        <div class="px-4 py-4 space-y-2">
+            <a href="/index" class="headeritems">Home</a>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/about" class="headeritems">About</a>
+                    <button onclick="toggleDropdown('mobile-about-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-about-dropdown" class="hidden">
+                    
+                        <a href="/pages/testimonials" class="mobile_header_subitems">Testimonials</a>
+                    
+                        <a href="/pages/blog" class="mobile_header_subitems">Blog</a>
+                    
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <a href="/pages/service" class="headeritems">Services</a>
+                    <button onclick="toggleDropdown('mobile-services-dropdown')" class="text-gray-500 focus:outline-none">
+                        <i class="bx bx-chevron-down"></i>
+                    </button>
+                </div>
+                <div id="mobile-services-dropdown" class="hidden">
+                    
+                        <a href="/Services/kitchen" class="mobile_header_subitems">Kitchen</a>
+                    
+                        <a href="/Services/bath" class="mobile_header_subitems">Bath</a>
+                    
+                        <a href="/Services/Additions" class="mobile_header_subitems">Additions</a>
+                    
+                        <a href="/Services/indoorliving" class="mobile_header_subitems">Indoor Living</a>
+                    
+                        <a href="/Services/outdoorliving" class="mobile_header_subitems">Outdoor Living</a>
+                    
+                </div>
+            </div>
+            <a href="/pages/Area-served" class="headeritems">Area Served</a>
+            <a href="/pages/contact" class="headeritems">Contact</a>
+        </div>
+    </div>
+</header>
+
+
+    <main>
+        ---
+<!-- About Section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center px-8 md:px-20 lg:px-32 gap-2 md:gap-4 lg:gap-6 pt-48 pb-12">
+    <div>
+        <h1 class="hero-title bg-opacity-100 isolate z-1 text-Brandcolor lg:ml-12 whitespace-nowrap">
+            <span>Area Served</span>
+        </h1>
+    </div>
+    <div class="lg:mr-2">
+        <p class="hero-description text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+    </div>
+</div>
+
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .hover-grow:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+    </style>
+
+    <!-- Main Content Section -->
+    <section class="container mx-auto px-4 py-12">
+        <!-- Title and Description -->
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl text-Brandcolor mb-4 tracking-wide">Our Premium Services in Clintonville, Columbus, Ohio</h2>
+        </div>
+        <section class="container mx-auto px-4">
+            <!-- Image with Lorem Ipsum Text Below it -->
+            <div class="flex flex-col items-center justify-center bg-white p-8 mb-12" data-aos="fade-up">
+                <img src="https://media.istockphoto.com/id/1167135261/photo/modern-buildings-and-offices-on-liffey-river-in-dublin.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=Rl7x9GCJV9G1nZ3Gb739LUe48wx5p7FgpKbJ5nnTsP0=" alt="Service Image" class="w-full max-w-3xl mb-6 rounded-lg shadow-xl">
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis vitae mi eu accumsan. Morbi ac luctus nulla. Mauris pharetra mollis eros, et venenatis diam tincidunt vitae. Sed laoreet lectus ac diam dapibus suscipit. Nam est risus, semper eu cursus sed, tempus eu leo. Integer bibendum lectus in orci luctus aliquam.</p>
+                <p class="text-lg text-gray-700 max-w-3xl text-center text-justify"></p>
+            </div>
+        </section>
+        <section class="mt-10 px-5">
+            <div class="relative w-full h-96 mt-5 mb-10">
+                <!-- Google Map iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114204.767224574!2d-85.30982412739567!3d40.33756318471299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8836e97ab54d8ec1%3A0xe5cd64399c9fd916!2sOhio%2C%20USA!5e0!3m2!1sen!2sin!4v1732116620919!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <div class="bg-white p-6 rounded-xl shadow-xl hover-grow hover-shadow" data-aos="fade-up" data-aos-delay="0">
+                <h3 class="text-2xl font-semibold text-Brandcolor mb-4">Kitchen Remodeling</h3>
+                <img src="https://media.istockphoto.com/id/154030192/photo/modern-beige-kitchen-interior.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=zUMFEczLgykUmUnLOfyP-S0JBRTAXhwVyudfbJgdhLM=" alt="Kitchen Remodeling" class="w-full h-48 object-cover rounded-lg mb-4 transition duration-300 hover:scale-110">
+                <p class="text-gray-600 text-lg">Transform your kitchen into a beautiful and functional space with modern upgrades, including cabinetry, countertops, and lighting.</p>
+                <a href="#contact-form" class="mt-4 inline-block bg-Brandcolor text-white font-semibold py-2 px-6 rounded-full hover:bg-BrandcolorHover transition duration-300">Learn More</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-xl hover-grow hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-semibold text-Brandcolor mb-4">Bathroom Renovations</h3>
+                <img src="https://media.istockphoto.com/id/2170317632/photo/luxury-bathroom-interior-with-shower-toilet-and-mirror.webp?a=1&amp;b=1&amp;s=612x612&amp;w=0&amp;k=20&amp;c=Xv4e3JTRwqRwM_3qWM6uAUHzFeAeOJHzCoIeLrM5njw=" alt="Bathroom Renovations" class="w-full h-48 object-cover rounded-lg mb-4 transition duration-300 hover:scale-110">
+                <p class="text-gray-600 text-lg">Create a spa-like atmosphere in your bathroom with luxurious fixtures, modern tiles, and efficient layouts for a fresh and relaxing feel.</p>
+                <a href="#contact-form" class="mt-4 inline-block bg-Brandcolor text-white font-semibold py-2 px-6 rounded-full hover:bg-BrandcolorHover transition duration-300">Learn More</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-xl hover-grow hover-shadow" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-2xl font-semibold text-Brandcolor mb-4">Home Additions</h3>
+                <img src="https://media.istockphoto.com/id/1292475721/photo/house-construction-framing-gradating-into-finished-kitchen-build.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=Bej7Uvae4UaukW4kNYlAV9CkjP7-JTYfTNuCpB49x88=" alt="Home Additions" class="w-full h-48 object-cover rounded-lg mb-4 transition duration-300 hover:scale-110">
+                <p class="text-gray-600 text-lg">Expand your living space with custom home additions. Whether it&#39;s a new bedroom, a sunroom, or a second floor, we build with quality and care.</p>
+                <a href="/about" class="mt-4 inline-block bg-Brandcolor text-white font-semibold py-2 px-6 rounded-full hover:bg-BrandcolorHover transition duration-300">Learn More</a>
+            </div>
+            
+        </div>
+        
+
+        <!-- Request a Quote Section -->
+        <div class="text-center mt-16" data-aos="fade-up">
+            <h2 class="text-4xl font-extrabold text-Brandcolor mb-4">Get a Free Quote</h2>
+            <p class="text-xl text-gray-700 mb-6 max-w-3xl mx-auto">Have a project in mind? Let us bring it to life with a free consultation.</p>
+            <a href="/contact">
+                <button class="px-8 py-3 bg-Brandcolor text-white font-semibold rounded-full text-lg hover:bg-BrandcolorHover transition duration-300">Request a Quote</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Location Links Section -->
+    <section class="bg-Brandcolor py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Explore Our Other Locations</h2>
+            <div class="space-x-6">
+                <a href="/Areapages/Dublin" class="text-white hover:text-BrandcolorHover text-lg font-medium">Dublin, Ohio</a>
+                <a href="/Areapages/Downtown" class="text-white hover:text-BrandcolorHover text-lg font-medium">Downtown, Ohio</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({
+            duration: 1000,  
+            easing: 'ease-in-out',
+            once: true, 
+        });
+    </script>
+
+    </main>
+
+    <!-- Footer Section starts -->
+<div class="flex flex-col bg-opacity-100 isolate">
+    <!-- Footer Section at the End of the Page -->
+    <footer class="bg-Footercolor text-center py-10">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Section with Logo -->
+          <div class="text-center sm:text-left">
+            <!-- Company Logo -->
+            <img src="https://www.casedesign.com/wp-content/themes/case-redesign/images/case-logo.svg" alt="Company Logo" class="w-32 mx-auto sm:mx-0">
+            <p class="mt-2 text-sm text-black">Empowering your business with innovative solutions.</p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Quick Links</h4>
+            <ul class="mt-2 space-y-2 ">
+              <li><a href="/index" class="footer-text">Home</a></li>
+              <li><a href="/pages/service" class="footer-text">Services</a></li>
+              <li><a href="/pages/Area-served" class="footer-text">Area Served</a></li>
+              <li><a href="/pages/about" class="footer-text">About Us</a></li>
+              <li><a href="/pages/blog" class="footer-text">Blog</a></li>
+              <li><a href="/pages/contact" class="footer-text">Contact</a></li>
+              <li><a href="#" class="footer-text">Sitemap</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact Us Section -->
+          <div class="text-center sm:text-left">
+            <h4 class="text-lg font-semibold text-Brandcolor">Contact Us</h4>
+            <p class="mt-2 text-sm text-black">123 Main Street, Suite 500</p>
+            <p class="mt-2 text-sm text-black">City, State, ZIP</p>
+            <p class="mt-2 text-sm">
+              Email: <a href="mailto:contact@company.com" class="footer-text">contact@company.com</a>
+            </p>
+            <p class="mt-2 text-sm text-black">Phone: +1 (123) 456-7890</p>
+          </div>
+  
+          <!-- Social Media Section -->
+          <div class="text-center sm:text-left">
+            <h5 class="text-lg font-semibold text-Brandcolor">Follow Us</h5>
+            <div class="mt-4 flex justify-center sm:justify-start space-x-6">
+              <a href="https://facebook.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="footer-text text-2xl">
+                <i class="fab fa-instagram-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Footer Bottom Section -->
+        <div class="border-t border-gray-700 pt-4">
+            <div class="flex justify-center items-center space-x-2">
+              <p class="text-xs sm:text-sm text-black truncate">© 2024 Your Company. All rights reserved.</p>
+              <a href="/pages/privacy&policy" class="text-xs sm:text-sm footer-text truncate">| Privacy Policy</a>
+              <a href="/pages/terms" class="text-xs sm:text-sm footer-text truncate">| Terms & Conditions</a>
+            </div>
+          </div>
+          
+      </div>
+    </footer>
+</div>
+  <!-- Footer Section ends -->
+  
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
