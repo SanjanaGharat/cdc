@@ -239,7 +239,32 @@
       </iframe>
     </div>
   </section>
+<script>
+  const form = document.getElementById('contact-form');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const formObject = {};
+  formData.forEach((value, key) => {
+    formObject[key] = value;
+  });
 
+  const response = await fetch('/api/sendEmail', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formObject),
+  });
+
+  if (response.ok) {
+    alert('Form submitted successfully!');
+  } else {
+    alert('Failed to submit form. Please try again.');
+  }
+});
+
+</script>
 
 
     </main>

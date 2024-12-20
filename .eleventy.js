@@ -6,7 +6,6 @@ export default function (eleventyConfig) {
 
     eleventyConfig.addWatchTarget("src/css/");
     eleventyConfig.addWatchTarget("src/js");
-    eleventyConfig.addPassthroughCopy({ './api': './_site/api' });
     eleventyConfig.addCollection("testimonials", (collection) => {
       return collection.getFilteredByGlob("./src/testimonials/*.md");
     });
